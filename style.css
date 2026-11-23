@@ -1,0 +1,41 @@
+
+.dropdown {
+    position: relative;
+}
+
+.dropdown-link {
+    display: inline-block;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    min-width: 170px;
+    background: white;
+    padding: 12px 0;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+
+.dropdown-menu a {
+    display: block;
+    padding: 12px 18px;
+    white-space: nowrap;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+@media (max-width: 700px) {
+    .dropdown-menu {
+        position: static;
+        box-shadow: none;
+        padding-left: 15px;
+    }
+
+    .dropdown:hover .dropdown-menu {
+        display: block;
+    }
+}
